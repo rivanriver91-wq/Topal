@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOPAL Company</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+
+body{
+background:linear-gradient(#8fd3ff,#e9f9ff);
+color:#222;
+overflow-x:hidden;
+}
+
+/* HERO SKY */
+#hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+background:linear-gradient(#7ecbff,#dff6ff);
+}
+
+/* SUN */
+.sun{
+position:absolute;
+top:80px;
+right:120px;
+width:120px;
+height:120px;
+background:#fff5a8;
+border-radius:50%;
+box-shadow:0 0 80px rgba(255,230,120,0.9);
+}
+
+/* CLOUDS */
+.cloud{
+position:absolute;
+background:white;
+border-radius:100px;
+opacity:.95;
+}
+
+.cloud:before,.cloud:after{
+content:"";
+position:absolute;
+background:white;
+border-radius:50%;
+}
+
+.cloud1{width:200px;height:60px;top:150px;left:-250px;animation:cloudMove 60s linear infinite}
+.cloud1:before{width:90px;height:90px;top:-40px;left:20px}
+.cloud1:after{width:70px;height:70px;top:-25px;right:20px}
+
+.cloud2{width:250px;height:70px;top:280px;left:-300px;animation:cloudMove 90s linear infinite}
+.cloud2:before{width:110px;height:110px;top:-50px;left:30px}
+.cloud2:after{width:80px;height:80px;top:-30px;right:30px}
+
+.cloud3{width:180px;height:55px;top:380px;left:-220px;animation:cloudMove 75s linear infinite}
+.cloud3:before{width:80px;height:80px;top:-35px;left:15px}
+.cloud3:after{width:60px;height:60px;top:-20px;right:15px}
+
+@keyframes cloudMove{
+from{transform:translateX(0)}
+to{transform:translateX(140vw)}
+}
+
+/* 3D TOPAL TEXT */
+.centerText{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) perspective(800px) rotateX(15deg);
+font-size:150px;
+font-weight:900;
+letter-spacing:14px;
+color:white;
+font-family:Impact,Haettenschweiler,'Arial Black',sans-serif;
+text-shadow:
+0 2px 0 #dcdcdc,
+0 4px 0 #c9c9c9,
+0 6px 0 #b6b6b6,
+0 8px 0 #a3a3a3,
+0 10px 15px rgba(0,0,0,.25),
+0 0 25px rgba(255,255,255,.8);
+}
+
+section{
+padding:80px 10%;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+font-size:38px;
+margin-bottom:30px;
+color:#0d4d7a;
+}
+
+.about{
+font-size:18px;
+line-height:1.9;
+white-space:pre-line;
+}
+
+/* CEO GRID */
+.ceoGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+align-items:start;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,.1);
+position:relative;
+transition:.3s;
+}
+
+.card h3{margin-top:15px;color:#0d4d7a}
+
+/* CROWNS */
+.crown{
+font-size:28px;
+position:absolute;
+top:-18px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.gold{color:#FFD700;text-shadow:0 0 10px rgba(255,215,0,.7)}
+.silver{color:#C0C0C0;text-shadow:0 0 10px rgba(192,192,192,.7)}
+
+/* MAIN CEO */
+.mainCEO{
+transform:scale(1.15);
+border:2px solid #FFD700;
+box-shadow:0 10px 35px rgba(0,0,0,.15);
+z-index:2;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#eaf7ff;
+margin-top:80px;
+font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="hero">
+
+<div class="sun"></div>
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<div class="centerText">TOPAL</div>
+
+</div>
+
+<section>
+
+<h2>ABOUT</h2>
+
+<div class="about">
+Topal Company
+
+История компании основана на давних событиях, когда она была маленькой семьей.
+Где семья, живущая в "San-Fierro", была основана в конце 1988 года.
+
+Когда штат стал свидетелем переворотов и восстаний против правительства из-за
+экономических условий в городах "Los-Santos", "Las-Venturas" и "San-Fierro".
+
+Семья Топал активно участвовала в политике и переговорах с гражданами,
+чтобы помочь стабилизировать ситуацию.
+
+Основание компании
+
+Семья была основана "Tim".
+"Siko" управлял всей семьей.
+
+В то время состояние семьи оценивалось примерно в 4 миллиарда долларов
+и семья владела роскошными автомобилями и дворцами.
+
+Но в 2002 году семья потеряла популярность после покушения на "Tim".
+
+Возрождение
+2020 / 5 / 28
+
+После прошлых потерь руководство перешло к
+"Siko_Topal" вместе с "James_Topal" и "Luis_Topal".
+
+Сегодня компания стремится бороться с коррупцией
+и незаконными организациями.
+</div>
+
+</section>
+
+<section>
+
+<h2>CEO</h2>
+
+<div class="ceoGrid">
+
+<div class="card mainCEO">
+<div class="crown gold">👑</div>
+<h3>Siko Topal</h3>
+<p>Chief Executive Officer</p>
+</div>
+
+<div class="card">
+<div class="crown silver">👑</div>
+<h3>Tim Topal</h3>
+<p>Founder</p>
+</div>
+
+<div class="card">
+<div class="crown silver">👑</div>
+<h3>James Topal</h3>
+<p>Executive Director</p>
+</div>
+
+<div class="card">
+<div class="crown silver">👑</div>
+<h3>Barry Topal</h3>
+<p>Operations Director</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+TOPAL Company © 2026
+</footer>
+
+</body>
+</html>
